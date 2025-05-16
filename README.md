@@ -14,3 +14,7 @@
     - localhost means the AMQP broker (like RabbitMQ) is running on the same machine as your application
     - 5672 is the default port number for AMQP
     - If we were connecting to a remote message broker, we would replace localhost with the actual server address
+
+Why the total number of queue is as such 15 (like in the screenshot below)?
+The publisher code sends 5 messages each time it runs. If we run the publisher program three times (5 messages × 3 runs), the subscriber would receive 15 messages in total.
+<img width="1678" alt="image" src="https://github.com/user-attachments/assets/177f526e-446e-4cbd-8dd3-e5e41e932ef9" />
